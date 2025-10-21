@@ -25,10 +25,14 @@
      - Otherwise, print the number
 
  */
+
+
 for i in 1...100 {
     // Implement Make School here!
 
 }
+
+
 //: [Previous](@previous)
 /*:
 
@@ -138,3 +142,4 @@ for i in 1...100 {
      School
 
  */
+

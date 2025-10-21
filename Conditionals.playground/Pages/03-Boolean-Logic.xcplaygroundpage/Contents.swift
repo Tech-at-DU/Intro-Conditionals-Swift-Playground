@@ -12,8 +12,12 @@
  `!` (not) is used on a single `Bool`. It inverts it! `true` becomes `false` and `false` becomes `true`.
  
  */
+
+
 !true
 !false
+
+
 /*:
  
  ## And `&&`
@@ -21,10 +25,14 @@
  `&&` (and) is used to combine two `Bool` values into one. The result is `true` when both `Bool` values are `true` and `false` all other times.
  
  */
+
+
 true && true
 true && false
 false && true
 false && false
+
+
 /*:
  
  ## Or `||`
@@ -32,10 +40,14 @@ false && false
  `||` (or) is used to combine two `Bool` values into one. The result is `true` when either or both `Bool` values are `true` and `false` when both `values` are `false`.
  
  */
+
+
 true || true
 true || false
 false || true
 false || false
+
+
 /*:
  
  - important: In the examples we use raw `true` and `false` values but `!`, `&&`, `||` can all be used with `Bool` variables and conditional statements like `<` and `==`!
@@ -55,6 +67,8 @@ false || false
  - callout(Challenge): Fix the `cruiseControl` function below! It should call the `brake()` function when `distance` is less than fifty. Otherwise, it should call `accelerate()` when it's is under 60 mph and it is slower than the car in front of it.
  
  */
+
+
 func cruiseControl(currentSpeed:Int, distance: Int, previousDistance: Int) {
     // Fix this to implement a basic adaptive cruise control
     if distance < 10 {
@@ -65,6 +79,8 @@ func cruiseControl(currentSpeed:Int, distance: Int, previousDistance: Int) {
         }
     }
 }
+
+
 /*:
  
  - callout(Hint): You will need to use `distance` and `previousDistance` to solve this!
@@ -74,6 +90,8 @@ func cruiseControl(currentSpeed:Int, distance: Int, previousDistance: Int) {
 //:
 //: This is special code required to make the mini-game work. You do NOT need to understand it right now.
 //import XCPlayground
+
+
 import PlaygroundSupport
 let results = GameScene.setup(step: .SpeedUp)
 (results.scene as! GameScene).updateCar = cruiseControl

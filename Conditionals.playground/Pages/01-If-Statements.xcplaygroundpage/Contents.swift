@@ -20,6 +20,8 @@
  You can see this in action below!
  
  */
+
+
 let lessThanExample = 0 < 1
 let greaterThanExample = 1 > 0
 let equalToExample = 0 == 0
@@ -27,6 +29,8 @@ let equalToStringExample = "test" == "test"
 let notEqualToExample = "boolean" != "random string"
 let lessThanEqualToExample = 0 <= 0
 let greaterThanEqualToExample = 1 >= 0
+
+
 //: - experiment: Try out some _boolean operators_ below!
 
 
@@ -48,6 +52,8 @@ let greaterThanEqualToExample = 1 >= 0
  Check out some examples below!
  
  */
+
+
 if 0 < 1 {
     print("Zero is less than one")
 }
@@ -56,6 +62,8 @@ if 0 > 1 {
     // this will never run! Swift even warns you about it with the yellow triangle
     print("Zero is greater than one")
 }
+
+
 /*:
  
  Those examples are a bit silly but should demonstrate the point. The code inside _if statements_ will run when the _conditional_ evaluates to `true` and will not run when the _conditional_  evaluates to `false`.
@@ -69,11 +77,15 @@ if 0 > 1 {
  - callout(Challenge): Fix the code below! The speed limit on this road is _60 mph_. Change the code to make the car accelerate up to, but not past _60 mph_!
  
  */
+
+
 func cruiseControl(currentSpeed:Int, distance: Int, previousDistance: Int) {
     if true {
         accelerate()
     }
 }
+
+
 /*:
  
  - callout(Hint): The car will increase its speed by _1 mph_ everytime you call `accelerate` but you can only call `accelerate` once per time `cruiseControl` is automatically called.
@@ -85,8 +97,11 @@ func cruiseControl(currentSpeed:Int, distance: Int, previousDistance: Int) {
 //:
 //: This is special code required to make the mini-game work. You do NOT need to understand it right now.
 //import XCPlayground
+
+
 import PlaygroundSupport
 let results = GameScene.setup(step: .SpeedUp)
 (results.scene as! GameScene).updateCar = cruiseControl
 //XCPlaygroundPage.currentPage.liveView = results
 PlaygroundPage.current.liveView = results
+

@@ -36,14 +36,20 @@
  - callout(Hint): Only brake if the distance between cars is reasonably close -- there is no reason to brake for a car a mile ahead slowing down! Use the difference between `previousDistance` and `distance` to decide how hard to brake. Accelerate only when under the speed limit and the distance between cars is increasing.
 
 */
+
+
 func cruiseControl(currentSpeed:Int, distance: Int, previousDistance: Int) {
     // Fix this to implement a basic adaptive cruise control
 
 }
+
+
 //: [Previous](@previous) | [Next](@next)
 //:
 //: This is special code required to make the mini-game work. You do NOT need to understand it right now.
 //import XCPlayground
+
+
 import PlaygroundSupport
 let results = GameScene.setup(step: .SpeedUp)
 (results.scene as! GameScene).updateCar = cruiseControl
